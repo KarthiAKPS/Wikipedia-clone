@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Possible Results
+{% endblock %}
+
+{% block body %}
+    <h1>Are you looking for any of these</h1>
+
+    <ul>
+        {% for entry in entries %}
+            <li><a href="{% url 'encyclo:content' entry %}">{{ entry }}</a>
+        {% endfor %}
+    </ul>
+    <a href= "{{value}}">none of these</a>
+{% endblock %}

@@ -1,0 +1,1 @@
+Machine learning (ML) is a branch of artificial intelligence that leverages data to improve computer performance by giving machines the ability to "learn". Machine learning algorithms build a model based on sample data, known as training data, in order to make predictions or decisions without being explicitly programmed to do so.

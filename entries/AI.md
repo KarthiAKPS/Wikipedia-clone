@@ -1,0 +1,1 @@
+Artificial intelligence (AI) is intelligence demonstrated by computers, as opposed to human or animal intelligence. "Intelligence" encompasses the ability to learn and to reason, to generalize, and to infer meaning.
