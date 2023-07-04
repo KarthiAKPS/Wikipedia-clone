@@ -20,9 +20,10 @@ def index(request):
             l = util.list_entries()
             display = []
             for i in l:
-                for j in range(len(query)):
-                    if query[j].lower() in i.lower():
-                        display.append(i)
+                for j in query:
+                    if j.lower() in i.lower():
+                        if i not in display:
+                            display.append(i)
             if display != []:
                 return render(request, "encyclopedia/results.html", {
                     "entries": display,
@@ -50,10 +51,12 @@ def content(request, entry):
             l = util.list_entries()
             display = []
             for i in l:
-                for j in range(len(query)):
-                    if query[j].lower() in i.lower():
-                        display.append(i)
+                for j in query:
+                    if j.lower() in i.lower():
+                        if i not in display:
+                            display.append(i)
             if display != []:
+                display = set(display)
                 return render(request, "encyclopedia/results.html", {
                     "entries": display ,
                     "value" : query

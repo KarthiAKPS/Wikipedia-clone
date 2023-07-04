@@ -5,11 +5,10 @@
 {% endblock %}
 
 {% block body %}
-
 <form method="post" action="{% url 'encyclo:edit' %}">
     {% csrf_token %}
     <input type="hidden" name="title" value="{{title}}">
-    <p><h1> {{title}} </h1> <button type="submit" class="btn btn-outline-info">Edit</button></p>
+    <p><h1 style="color:gray; font-size:"> {{title}} </h1> <button type="submit" class="btn btn-outline-info">Edit</button></p>
     
 </form>
 <hr>
